@@ -70,3 +70,9 @@ members and deployment environments use the same versions of dependencies.
 by using above command we run our react app.
 
 **- dist folder keeps the files minified for us.
+
+Question) What is Tree-Shaking?
+-> Tree shaking is a technique used in modern JavaScript applications to optimize and reduce the size of the final bundle.
+ It works by eliminating dead code, which is code that is not actually used or referenced in the application. This is
+  particularly useful in large codebases and when using libraries or frameworks that include a lot of functionalities 
+  that might not all be needed.
