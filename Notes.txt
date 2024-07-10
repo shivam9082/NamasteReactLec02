@@ -1,0 +1,72 @@
+ Q-1) What is Bundling?
+ -->   Sure, Shivam! Bundling is a crucial concept in React and modern web development. It refers to the process 
+ of taking various assets such as JavaScript files, CSS files, and other resources, and combining them into a single
+  or a few files. This process helps in optimizing the performance and manageability of web applications. Here's a
+   breakdown of what bundling involves and why it's important:
+
+### Why Bundling?
+
+1. **Improves Performance**: By reducing the number of HTTP requests required to load an application, bundling can 
+significantly improve the performance of your web app. Fewer requests mean faster load times.
+2. **Code Splitting**: Bundling allows for code splitting, which means you can split your code into multiple bundles 
+that can be loaded on demand. This helps in loading only the necessary code for the current view, reducing the initial 
+load time.
+3. **Minification and Compression**: Bundlers often include processes for minifying and compressing the code, which 
+reduces the file size and further improves load times.
+4. **Manageability**: It simplifies dependency management by allowing you to import modules and components without 
+worrying about script order or dependencies.
+
+### Common Bundlers in React
+
+1. **Webpack**: Webpack is one of the most popular bundlers used in React projects. It allows you to bundle JavaScript files along with other assets like HTML, CSS, and images.
+2. **Parcel**: Parcel is known for its zero-configuration setup. It's fast and easy to use, making it a good choice for small to medium-sized projects.
+3. **Rollup**: Rollup is often used for bundling libraries because of its ability to produce smaller, more efficient bundles.
+
+### How Bundling Works
+
+1. **Entry Point**: The bundler starts with an entry point file, usually `index.js` in React projects, and follows all the 
+`import` statements to create a dependency graph.
+2. **Dependency Graph**: The dependency graph is a representation of all the modules and their dependencies. The bundler
+ uses this graph to understand how modules are interconnected.
+3. **Output**: Based on the dependency graph, the bundler combines all the modules into one or more bundles. These 
+bundles are then minified and optimized for production.
+
+
+Question) What is npm?
+-> Package Manager: npm is a package manager for JavaScript. It allows developers to install, share, and manage
+ JavaScript packages and dependencies. These packages are stored in the npm registry and can be reused across different
+  projects.
+
+Command-Line Interface (CLI): npm comes with a powerful command-line interface that provides a variety of commands for 
+managing packages and dependencies, running scripts, and handling project configurations.
+
+To initialize npm in terminal type : npm init
+- If you don't have node.js then you won't be able to install and initialize npm package manager.  
+
+Question) What is the difference between dependencies and devDependencies?
+-> - dependencies are the packages that your project needs to run in production.
+ These are essential for the application to function.
+
+ - devDependencies are the packages that are only needed during the development of your project. 
+ These are not required for the application to run in production.
+
+
+ ctrl + F is used to search in vs code editor.
+
+ Question) - What is the difference between `package.json` and `package-lock.json`
+ -> - To know what exact version we are using for production package-lock.json is used.
+
+ When a new package is added using npm install <package-name>, npm updates both package.json (adding the package to dependencies or devDependencies) and package-lock.json 
+ (specifying the exact version installed and its dependencies).
+package-lock.json is particularly useful in team environments and for deploying applications to ensure that all team 
+members and deployment environments use the same versions of dependencies.
+
+**- for installing parcel type :- npx install -D parcel
+**- node modules is kind of data base for our npm.
+
+**- command to install react and react-dom :- npm install react OR npm i react
+                                              npm install react-dom or npm i react-dom
+**- how to define entry point in out app :- npx parcel index.html 
+by using above command we run our react app.
+
+**- dist folder keeps the files minified for us.
