@@ -2,8 +2,9 @@
   "name": "lec-2",
   "version": "1.0.0",
   "description": "this is my first react app",
-  "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/shivam9082/NamasteReactLec02#readme",
   "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.12.0",
     "process": "^0.11.10"
   },
